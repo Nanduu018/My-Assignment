@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Facebook Login </title>
+</head>
+<style type="text/css">
+	.mdiv
+	{
+       margin-top: 200px;
+       background-color: transparent;
+       
+	}
+	.head1
+	{
+	   font-size: 60px;
+       font-family: arial;
+       font-weight: bolder;
+       color:royalblue;
+       margin-left:100px;
+	}
+	.head2
+	{
+		font-size: 30px;
+		margin-left:100px;
+	}
+	.lgnfrm
+	{
+	margin-top: -140px;
+	margin-left: 160px;	
+	
+	}
+	.t1
+	{
+		
+		padding: 40px;
+		background-color: transparent;
+		border: 1px solid grey;
+		border:none;
+		border-color: white;
+		box-shadow: 0 4px 8px 0 rgb(0,0,0,0.2),0 6px 20px 0 rgb(0,0,0,0.19);
+		border-radius: 5px;
+		width: 150px;
+		margin-top: 0.1px;
+		margin-left : 600px;
+		margin-right: 10px;
+
+
+	}
+	input
+	{
+		width: 95%;
+		height: 200%;
+		font-size: 20px;
+		margin-left: 5px;
+		border-color: white;
+
+
+
+	}
+	.crt
+	{
+		background-color: green;
+		color: white;
+		height: 50px;
+		width: 300px;
+		border-radius:5px;
+		font-weight: bolder;
+
+	}
+	.lgn
+	{
+		background-color: royalblue;
+		color: white;
+		height: 50px;
+		width: 350px;
+		font-weight: bolder;
+		border-radius:5px;
+		margin-bottom: 10px;
+
+	}
+	a
+	{
+		text-decoration: none;
+		font-size: 16px;
+		font-family: ;
+/*		font-weight: bolder;*/
+		text-align: center;
+		margin-bottom: 100px;
+	}
+</style>
+<body>
+<div class="mdiv">
+<table>
+	<tr>
+		<td><span class="head1">facebook</td>
+	</tr>
+	<tr>
+		<td><span class="head2">Connect with friends and the world </span></td>
+	</tr>
+	<tr><td><span class="head2">around you on Facebook.</span></td></tr>
+
+</table>
+<div  class="lgnfrm">
+<table class="t1"  cellpadding="0px">
+<form autocomplete="off">
+
+		<tr>
+			<td  height="0px"><input type="text" name="username" placeholder="Email or phone number" style="margin-top: 10px;" id="usr"><br><br>
+			</td></tr>
+			<tr>
+			<td height="0px"><input type="text" name="password" placeholder="Password" 
+			style="margin-bottom:10px" id="pass"></td></tr>
+			<tr>
+			<td  align="center"><input type="button" name="lgn" value="Login" class="lgn" onclick="validate()"></td></tr>
+			<tr>
+			<td ><span ><a href="#" style="margin-left: 120px;"> Forgot password ?</a></span></td></tr>
+			<td ><hr size="0px" align="center" style="margin-bottom:30px"></td></tr>
+			<td align="center"><input type="button" name="crt" value="Create new account" class="crt" style="margin-bottom:20px"></td></tr>
+
+
+</form>
+</table>
+</div>
+</div>
+<script type="text/javascript">
+	let usr1="apkawtikwar"
+	let pass1="aditi@123"
+	function validate()
+	{
+		let usr2=document.getElementById("usr").value;
+		let pass2=document.getElementById("pass").value;
+		if((usr1===usr2)&&(pass1===pass2))
+		{
+			open('fbHome.html');
+		}
+		else{
+			alert('WRONG CREDIENTIALS')
+		}
+	}
+</script>
+</body>
+</html>

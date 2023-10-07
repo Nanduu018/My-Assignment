@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LOGIN_PAGE</title>
+	<style type="text/css">
+		.mdiv
+		{
+			height: 100px;
+			width: 20%;
+			margin-top: 250px;
+			margin-left: 1000px;
+		}
+		input
+		{
+			width: 95%;
+			margin-top: 10px;
+			height: 20px;
+			background-color: transparent;
+			border: none;
+			border-bottom: 3px solid green;
+			text-align: center;
+			font-weight: bolder;
+			/*color: white;*/
+			text-align: left;
+		}
+		input[type="text"]:focus
+		{
+			outline: none;
+		}
+		input[type="button"]
+		{
+			border: none;
+			background-color: green;
+			height: 30px;
+			color: white;
+			border-radius: 20px;
+			text-align: center;
+		}
+		a
+		{
+			text-decoration: none;
+			color: black;
+			margin-left: 120px;
+		}
+		h1
+		{
+			color: black;
+			font-family: sans-serif;
+		}
+		.bg
+		{
+			background-image: url('https://images3.alphacoders.com/724/724830.jpg');
+		    height: 100vh;
+			width: 100%;
+			position: absolute;
+            top: 0px;
+            left: 0px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;	
+		}
+	</style>
+</head>
+<body class="bg">
+	<div class="mdiv" align="center">
+		<img src="https://icons.veryicon.com/png/o/business/multi-color-financial-and-business-icons/user-139.png" height="100px" width="100px">
+      <h1 align="center">WELCOME</h1>
+      <form>
+      	<!-- <fieldset> -->
+      		<input type="text" name="Username" placeholder="Username"><br><br>
+      		<input type="text" name="Password" placeholder="Password"><br><br>
+      		<a href="#">Forgot Password?</a><br><br>
+      		<input type="button" name="login" value="LOGIN">
+      	<!-- </fieldset> -->
+      </form>
+  </div>
+</body>
+</html>
